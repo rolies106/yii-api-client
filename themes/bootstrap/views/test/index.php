@@ -47,7 +47,7 @@ You'll retrieve the access token in JSON format.
 </p>
 
 <?php if (empty(Yii::app()->session['rest_api'])) : ?>
-    <a href="http://api-php.local/auth/authorize?client_id=<?php echo Yii::app()->rest->app_id; ?>&response_type=code" class="btn btn-primary">Request Access Login</a>
+    <a href="<?php echo Yii::app()->rest->app_host; ?>auth/authorize?client_id=<?php echo Yii::app()->rest->app_id; ?>&response_type=code" class="btn btn-primary">Request Access Login</a>
 <?php else : ?>
     Success
 <?php endif; ?>
