@@ -1,0 +1,16 @@
+/index.php
+/index-test.php
+/protected/yiic.php
+/protected/config/main.php
+/protected/config/test.php
+/protected/config/console.php
+
+/assets/
+/uploads/
+/framework/
+/protected/runtime/
+/public/
+migrate.sh
+*.DS_Store
+*Thumbs.db
+*~

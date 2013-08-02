@@ -58,14 +58,7 @@ return array(
         # Url Management
         'urlManager'=>array(
             'urlFormat'=>'path',
-            'rules'=>array(
-                # Social Networking Auth
-                // 'auth'=>'hybridauth',
-                // 'auth/login'=>'hybridauth/default/login',
-                // 'auth/login/<action:(callback)>/<provider:\w+>'=>'hybridauth/default/<action>/provider/<provider>',
-                // 'auth/login/<provider:\w+>'=>'hybridauth/default/login/provider/<provider>',
-                // 'auth/<controller:\w+>/<action:\w+>'=>'hybridauth/<controller>/<action>',
-                
+            'rules'=>array(                
                 # General Page
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -77,16 +70,6 @@ return array(
         'db'=>array(
             'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
         ),
-        // uncomment the following to use a MySQL database
-        /*
-        'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=testdrive',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-        ),
-        */
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',
@@ -98,12 +81,6 @@ return array(
                     'class'=>'CFileLogRoute',
                     'levels'=>'error, warning',
                 ),
-                // uncomment the following to show log messages on web pages
-                /*
-                array(
-                    'class'=>'CWebLogRoute',
-                ),
-                */
             ),
         ),
     ),
