@@ -37,7 +37,8 @@ Run this migration command from your console for each module (`api` and `user`) 
 
 ## Documentations
 
-**[In Plan]***
+[Basic Configuration](https://github.com/rolies106/yii-api-client/wiki/Basic-Configuration)
+[Rest Component Basig Usage](https://github.com/rolies106/yii-api-client/wiki/Rest-Component-Basic-Usage)
 
 ## Copyrights
 
