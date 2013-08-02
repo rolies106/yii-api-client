@@ -29,15 +29,18 @@ class TestController extends Controller
 
     public function actionDone()
     {
-        list($body, $info) = Yii::app()->rest->post('/users/me', array(
-            'token'     => Yii::app()->session['rest_api']['access_token'],
-        ));
-
-        if ($info['status_code'] == 200) {
-            
-        } else {
-            $this->redirect('/');
+        $identity = new UserIdentity(null,null);
+        if($identity->authenticate()) {
+            Yii::app()->user->login($identity);
+            $this->redirect('/test/me');            
         }
+        else
+            $this->redirect('/');
+    }
+
+    public function actionMe()
+    {
+        $this->render('me');
     }
 
     public function actionCallback()

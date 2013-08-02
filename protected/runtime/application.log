@@ -1963,3 +1963,364 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/08/02 08:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:13:27 [error] [php] Undefined variable: username (/Users/rolies106/www/rolies-api-client/protected/controllers/TestController.php:32)
+Stack trace:
+#0 /Users/rolies106/www/framework/web/filters/CFilterChain.php(133): TestController->runAction()
+#1 /Users/rolies106/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/rolies106/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/rolies106/www/framework/web/filters/CInlineFilter.php(58): TestController->filterAccessControl()
+#4 /Users/rolies106/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/rolies106/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/rolies106/www/framework/web/CController.php(265): TestController->runActionWithFilters()
+#7 /Users/rolies106/www/framework/web/CWebApplication.php(282): TestController->run()
+#8 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/rolies106/www/rolies-api-client/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/done
+in /Users/rolies106/www/rolies-api-client/protected/controllers/TestController.php (32)
+in /Users/rolies106/www/rolies-api-client/index.php (13)
+2013/08/02 08:13:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:13:36 [error] [php] Missing argument 1 for CUserIdentity::__construct(), called in /Users/rolies106/www/rolies-api-client/protected/controllers/TestController.php on line 32 and defined (/Users/rolies106/www/framework/web/auth/CUserIdentity.php:43)
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/rolies106/www/framework/web/filters/CFilterChain.php(133): TestController->runAction()
+#2 /Users/rolies106/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/rolies106/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Users/rolies106/www/framework/web/filters/CInlineFilter.php(58): TestController->filterAccessControl()
+#5 /Users/rolies106/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Users/rolies106/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/rolies106/www/framework/web/CController.php(265): TestController->runActionWithFilters()
+#8 /Users/rolies106/www/framework/web/CWebApplication.php(282): TestController->run()
+#9 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/rolies106/www/rolies-api-client/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/done
+in /Users/rolies106/www/rolies-api-client/protected/controllers/TestController.php (32)
+in /Users/rolies106/www/rolies-api-client/index.php (13)
+2013/08/02 08:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:13:56 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._name" is not defined.' in /Users/rolies106/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/rolies106/www/rolies-api-client/protected/components/UserIdentity.php(19): CComponent->__set('_name', 'admin')
+#1 /Users/rolies106/www/rolies-api-client/protected/controllers/TestController.php(33): UserIdentity->authenticate()
+#2 /Users/rolies106/www/framework/web/actions/CInlineAction.php(49): TestController->actionDone()
+#3 /Users/rolies106/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/rolies106/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Users/rolies106/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/rolies106/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Users/rolies106/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/rolies106/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/rolies106/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/rolies106/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/rolies106/www/framework/web/CWebApplication.php(282): CController->run('done')
+#12 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('test/done')
+#13 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/test/done
+HTTP_REFERER=http://api-client.local/
+---
+2013/08/02 08:13:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "me".' in /Users/rolies106/www/framework/web/CController.php:483
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CController.php(270): CController->missingAction('me')
+#1 /Users/rolies106/www/framework/web/CWebApplication.php(282): CController->run('me')
+#2 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('test/me')
+#3 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/me
+HTTP_REFERER=http://api-client.local/
+---
+2013/08/02 08:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:14:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:16:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:31:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:31:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:35:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/logout".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('user/logout')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/logout
+---
+2013/08/02 08:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:36:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:36:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/08/02 08:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/rolies106/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/rolies106/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/rolies106/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/rolies106/www/rolies-api-client/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

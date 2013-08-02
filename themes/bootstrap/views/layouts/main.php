@@ -20,8 +20,8 @@
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/')),
-                array('label'=>'Profile', 'url'=>array('/test/done'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Login', 'url'=>array('/test'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'Profile', 'url'=>array('/test/me'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Login', 'url'=>array('/test/index'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),
@@ -39,6 +39,8 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
+
+    <hr>
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by <a href="https://github.com/rolies106">@rolies106</a>.<br/>
