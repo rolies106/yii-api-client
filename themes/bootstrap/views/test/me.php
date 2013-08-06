@@ -25,8 +25,8 @@ You'll retrieve the user profile in JSON format
     {
         'id' => 1,
         'username' => 'admin',
-        'first_name' => 'Jhon',
-        'last_name' => 'Doe',
+        'first_name' => 'Rolies',
+        'last_name' => 'TheBee',
         'email' => 'jhon_doe@email.host',
         'join_date' => '2013-07-25 16:56:42',
     }
